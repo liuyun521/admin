@@ -1,0 +1,100 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <span></span>
+        <span class="navbar-brand" href="#">航卫管理系统</span>
+        <button class="navbar-toggler" type="button" (click)="topNavCollapsed = !topNavCollapsed" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div [collapse]="topNavCollapsed" class="navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <ul class="navbar-nav">
+            <div class="nav-item" dropdown>
+              <a href dropdownToggle (click)="false" class="nav-link dropdown-toggle">
+                <i class="fa fa-bell"></i>
+                <b class="caret"></b>
+              </a>
+              <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+                <li role="menuitem">
+                  <a class="dropdown-item" href="javascript:;">
+                    <div class="media">
+                      <span class="media-left hidden-md-down">
+                        <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
+                      </span>
+                      <div class="media-body">
+                        <h5 class="media-heading">
+                          <strong>张三</strong>
+                        </h5>
+                        <p class="small text-muted">
+                          <i class="fa fa-clock-o"></i> 2018-10-18 15：10</p>
+                        <p class="last hidden-md-down"> 运维通告...</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-item" href="javascript:;">
+                    <div class="media">
+                      <span class="media-left hidden-md-down">
+                        <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
+                      </span>
+                      <div class="media-body">
+                        <h5 class="media-heading">
+                          <strong>李四</strong>
+                        </h5>
+                        <p class="small text-muted">
+                          <i class="fa fa-clock-o"></i> 2018-10-18 11：10</p>
+                        <p class="last hidden-md-down"> 开会通知...</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-item" href="javascript:;">
+                    <div class="media">
+                      <span class="media-left hidden-md-down">
+                        <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
+                      </span>
+                      <div class="media-body">
+                        <h5 class="media-heading">
+                          <strong>王五</strong>
+                        </h5>
+                        <p class="small text-muted">
+                          <i class="fa fa-clock-o"></i> 2018-10-15 15：10</p>
+                        <p class="last hidden-md-down"> 上线通告...</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem">
+                  <a class="dropdown-item" href="javascript:;">
+                    全部消息
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav-item" dropdown>
+              <a href dropdownToggle (click)="false" class="nav-link dropdown-toggle">
+                <i class="fa fa-gear"></i> 设置
+                <b class="caret"></b>
+              </a>
+              <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+                <li role="menuItem">
+                  <a class="dropdown-item" href="javascript:;">
+                    <i class="fa fa-fw fa-user"></i> 我的</a>
+                </li>
+                
+                <li class="dropdown-divider"></li>
+                <li role="menuItem">
+                  <a class="dropdown-item" href="/login">
+                    <i class="fa fa-fw fa-power-off"></i> 退出
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </nav>
